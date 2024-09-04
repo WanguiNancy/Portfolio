@@ -4,29 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <title>Nancy Wangui</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Nancy Wangui - Accountant | Financial Analyst | Data Analyst | Virtual Assistant</title>
+    <style>
+        /* Custom styling to enhance appearance */
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar {
+            margin-bottom: 30px;
+        }
+        .section-title {
+            border-bottom: 2px solid #0d6efd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+        .profile-img {
+            max-width: 100%;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .skills-list, .tools-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .skills-list li, .tools-list li {
+            background: #e9ecef;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .experience-item, .project-item, .tool-item {
+            background: #ffffff;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .experience-item h4, .project-item h4, .tool-item h4 {
+            color: #0d6efd;
+        }
+        .contact-section a {
+            color: #0d6efd;
+        }
+    </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <div class="container">
     <a class="navbar-brand" href="#">Nancy Wangui</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav ms-auto">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Projects</a>
+          <a class="nav-link" href="#experience">Experience</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact </a>
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#tools">Data Tools</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
         </li>
       </ul>
     </div>
@@ -34,16 +84,130 @@
 </nav>
 
 <div class="container">
-  <div class="row">
-    <div class="col-9">About Us</div>
-    <div class="col-4">About Kui<br> Details (Proffesional Summary).</div>
-    <div class="col-6"> About <br>Pic .</div>
+  <!-- About Section -->
+  <div class="row" id="about">
+    <div class="col-lg-8">
+      <h2 class="section-title">About Me</h2>
+      <p>I am Nancy Wangui, a seasoned Accountant, Financial Analyst, Data Analyst, and Virtual Assistant with over three years of diverse corporate experience. I specialize in optimizing financial operations, providing in-depth data analysis, and developing data-driven strategies that enhance business performance. My expertise lies in financial modeling, budgeting, forecasting, and leveraging advanced data visualization tools like Power BI and Tableau. Additionally, I have experience as a Virtual Assistant, handling administrative tasks, managing schedules, and supporting business executives remotely.</p>
+      <p>My strengths include analytical thinking, problem-solving, attention to detail, and a collaborative mindset, which have enabled me to lead and execute projects effectively in dynamic environments.</p>
+    </div>
+    <div class="col-lg-4 text-center">
+      <img src="about.jpg" alt="Nancy Wangui" class="profile-img img-fluid">
+    </div>
+  </div>
+
+  <!-- Skills Section -->
+  <div class="row mt-5">
+    <div class="col-lg-12">
+      <h2 class="section-title">Skills</h2>
+      <ul class="skills-list">
+        <li>Financial Analysis & Modeling</li>
+        <li>Data Analysis & Visualization (Excel, Power BI, Tableau)</li>
+        <li>Accounting & Bookkeeping</li>
+        <li>Budgeting & Forecasting</li>
+        <li>Data Management & Reporting</li>
+        <li>Advanced Excel (VLOOKUP, PivotTables, Macros)</li>
+        <li>SQL & Python for Data Analysis</li>
+        <li>Financial Reporting & Compliance</li>
+        <li>Data-Driven Decision Making</li>
+        <li>Virtual Assistant (Scheduling, CRM Management, Email Management)</li>
+        <li>Cross-Functional Team Collaboration</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Experience Section -->
+  <div class="row mt-5" id="experience">
+    <div class="col-lg-12">
+      <h2 class="section-title">Professional Experience</h2>
+      <div class="experience-item">
+        <h4>Accounting Assistant</h4>
+        <p><strong>Company Name</strong> - Nairobi, Kenya (2021 - Present)</p>
+        <ul>
+          <li>Managed and maintained accurate financial records, including preparing monthly reconciliations and ensuring compliance with accounting standards.</li>
+          <li>Conducted comprehensive financial analysis to support strategic decision-making and improve cost efficiency.</li>
+          <li>Streamlined accounting processes, reducing month-end close time by 20% through the implementation of automated reporting tools and procedures.</li>
+          <li>Collaborated with cross-functional teams to develop and monitor budgets, achieving a 10% reduction in operating costs.</li>
+        </ul>
+      </div>
+      <div class="experience-item">
+        <h4>Data Analyst</h4>
+        <p><strong>Company Name</strong> - Nairobi, Kenya (2020 - 2021)</p>
+        <ul>
+          <li>Analyzed complex datasets to identify trends and patterns, providing actionable insights to support business growth strategies.</li>
+          <li>Developed and maintained interactive dashboards and reports using Power BI and Tableau to visualize key performance indicators (KPIs) and facilitate data-driven decisions.</li>
+          <li>Improved data accuracy and reporting efficiency by implementing data validation processes and automating data extraction workflows using Python and SQL.</li>
+          <li>Worked closely with marketing and sales teams to conduct market analysis, leading to a 15% increase in customer acquisition.</li>
+        </ul>
+      </div>
+      <div class="experience-item">
+        <h4>Virtual Assistant</h4>
+        <p><strong>Remote</strong> - Various Clients (2022 - Present)</p>
+        <ul>
+          <li>Managed calendars, scheduled meetings, and coordinated travel arrangements for executives, ensuring efficient use of time and resources.</li>
+          <li>Handled customer inquiries, email management, and CRM data entry, maintaining high levels of accuracy and professionalism.</li>
+          <li>Supported business operations by conducting market research, preparing presentations, and managing digital communication channels.</li>
+          <li>Utilized tools such as Google Workspace, Slack, Trello, and Asana for efficient task and project management.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Projects Section -->
+  <div class="row mt-5" id="projects">
+    <div class="col-lg-12">
+      <h2 class="section-title">Key Projects</h2>
+      <div class="project-item">
+        <h4>Financial Dashboard Development</h4>
+        <p>Designed and implemented a comprehensive financial dashboard using Power BI, which improved the visibility of key financial metrics and reduced the reporting time by 30%. This dashboard enabled the executive team to make faster and more informed decisions based on real-time data.</p>
+      </div>
+      <div class="project-item">
+        <h4>Sales Data Analysis</h4>
+        <p>Analyzed sales data using SQL and Excel to identify sales trends and customer purchasing behavior. The insights led to the development of targeted marketing campaigns, resulting in a 20% increase in sales revenue over three months.</p>
+      </div>
+      <div class="project-item">
+        <h4>Customer Feedback Analysis</h4>
+        <p>Conducted sentiment analysis on customer feedback using Python and Tableau, identifying key areas for product improvement and customer satisfaction. The findings contributed to a 15% reduction in customer complaints and a 10% increase in retention rates.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Data Analysis Tools Section -->
+  <div class="row mt-5" id="tools">
+    <div class="col-lg-12">
+      <h2 class="section-title">Data Analysis Tools</h2>
+      <div class="tool-item">
+        <h4>Excel & Google Sheets</h4>
+        <p>Proficient in advanced Excel functions such as VLOOKUP, PivotTables, Macros, and data analysis tools. Experienced in using Google Sheets for collaborative data management and real-time reporting.</p>
+      </div>
+      <div class="tool-item">
+        <h4>SQL</h4>
+        <p>Skilled in using SQL for querying databases, data extraction, and analysis. Experience with MySQL and SQL Server for data cleaning, manipulation, and report generation.</p>
+      </div>
+      <div class="tool-item">
+        <h4>Power BI & Tableau</h4>
+        <p>Expertise in developing interactive dashboards and visualizations using Power BI and Tableau. Capable of translating complex data into intuitive visual insights to support strategic decisions.</p>
+      </div>
+      <div class="tool-item">
+        <h4>Python</h4>
+        <p>Experience with Python libraries such as Pandas, NumPy, and Matplotlib for data manipulation, analysis, and visualization. Proficient in using Python scripts to automate data workflows and reporting.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="row mt-5" id="contact">
+    <div class="col-lg-12">
+      <h2 class="section-title">Contact</h2>
+      <p>If you'd like to collaborate or learn more about my work, feel free to reach out:</p>
+      <ul class="contact-section">
+        <li>Email: <a href="mailto:nancy@example.com">nancy@example.com</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/nancywangui">linkedin.com/in/nancywangui</a></li>
+      </ul>
+    </div>
   </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-
 </body>
 </html>
